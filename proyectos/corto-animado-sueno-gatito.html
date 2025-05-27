@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto: Corto Animado "El Sueño y el Gatito" - Estudio Fractal</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>body {padding-top: 70px;}</style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo-link-wrapper">
+        <div class="logo">
+        <img src="../assets/Imagenes/logo-estudio-fractal.png" alt="Logo Estudio Fractal" class="logo-img" />
+        Estudio Fractal
+        </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#products">Productos</a></li>
+      <li><a href="../index.html#expertise">Proyectos</a></li>
+      <li><a href="../paginas/about.html">Sobre Nosotros</a></li>
+    </ul>
+    <a class="cta-button" href="../paginas/contact.html">Contáctanos →</a>
+  </nav>
+
+  <main class="main-content">
+    <a href="../index.html#expertise" class="back-link">← Volver a Proyectos</a>
+    <h1>Proyecto: Corto Animado "El Sueño y el Gatito"</h1>
+    <img src="../assets/corto-sueno-gatito.jpg" alt="Escena clave del corto animado El Sueño y el Gatito, mostrando una estética onírica." class="content-image"/>
+
+    <p><strong>"El Sueño y el Gatito"</strong> es un cortometraje animado que se adentra en el territorio de lo onírico y lo surrealista para explorar las texturas de un sueño no particularmente feliz. Este proyecto, realizado en Estudio Fractal, busca utilizar el lenguaje de la animación para transmitir emociones y atmósferas complejas de una manera visualmente evocadora y artísticamente experimental.</p>
+
+    <h2>Sinopsis y Concepto</h2>
+    <p>El corto sigue a un protagonista (posiblemente un gatito, o un personaje que interactúa con uno) a través de un paisaje onírico cambiante y a menudo inquietante. No se trata de una narrativa lineal convencional, sino de una sucesión de escenas y transformaciones que reflejan la lógica fragmentada y a veces angustiante de ciertos sueños. El "gatito" puede actuar como un ancla emocional, un observador o un catalizador de los eventos surreales que se desarrollan.</p>
+    <p>El tema central es la exploración de la ansiedad o la melancolía a través del simbolismo y la metáfora visual, sin recurrir a diálogos explícitos. La atmósfera y el estado emocional se comunican principalmente a través del diseño visual, el movimiento y el sonido.</p>
+
+    <h2>Estilo Visual y Técnicas de Animación</h2>
+    <p>El estilo visual de "El Sueño y el Gatito" es fundamental para transmitir su mensaje. Se explorarán técnicas que puedan incluir:</p>
+    <ul>
+      <li><strong>Animación 2D Tradigital:</strong> Combinando principios de la animación dibujada a mano con herramientas digitales para lograr fluidez y expresividad.</li>
+      <li><strong>Paleta de Colores Limitada o Desaturada:</strong> Para enfatizar la atmósfera melancólica o irreal del sueño.</li>
+      <li><strong>Diseño de Personajes Expresivo:</strong> Aunque minimalista, el diseño buscará transmitir emociones sutiles.</li>
+      <li><strong>Fondos Abstractos o Simbólicos:</strong> Los entornos pueden ser fluidos, transformarse o representar estados mentales más que lugares físicos.</li>
+      <li><strong>Uso de Texturas:</strong> Incorporación de texturas visuales para añadir profundidad y una cualidad táctil a la animación.</li>
+      <li><strong>Ritmo y Timing Cuidadosos:</strong> El ritmo de la animación y la duración de las escenas serán clave para construir la tensión o la sensación de extrañeza.</li>
+    </ul>
+
+    <h2>Diseño Sonoro y Música</h2>
+    <p>El sonido jugará un papel crucial en la creación de la atmósfera del corto. Se contempla:</p>
+    <ul>
+      <li><strong>Música Ambiental y Evocadora:</strong> Composiciones originales que subrayen las emociones y los cambios en el sueño.</li>
+      <li><strong>Efectos de Sonido Sutiles y Simbólicos:</strong> Sonidos que pueden ser realistas o distorsionados para acentuar la naturaleza onírica.</li>
+      <li><strong>Ausencia de Diálogo:</strong> La historia se contará puramente a través de lo visual y lo sonoro.</li>
+    </ul>
+
+    <h2>Objetivos del Proyecto</h2>
+    <p>"El Sueño y el Gatito" es una pieza de exploración artística que busca:</p>
+    <ul>
+      <li>Experimentar con las posibilidades narrativas de la animación abstracta y simbólica.</li>
+      <li>Transmitir emociones complejas sin recurrir a la narrativa convencional.</li>
+      <li>Crear una experiencia visual y auditiva inmersiva que invite a la interpretación personal.</li>
+      <li>Demostrar la capacidad de Estudio Fractal para producir animación con una fuerte carga autoral y artística.</li>
+    </ul>
+    <p>Este cortometraje es un viaje a través de un paisaje interior, una pequeña meditación animada sobre esos sueños que, aunque no felices, forman parte de nuestra geografía emocional.</p>
+  </main>
+
+  <footer class="footer section-spacer">
+    <div class="footer-highlight">
+      <div class="footer-benefits">
+        <h3>¿Por qué elegir Estudio Fractal?</h3>
+        <ul>
+          <li onclick="showFooterImageProject('arte')">Arte + Tecnología en armonía</li>
+          <li onclick="showFooterImageProject('personalizado')">Soluciones 100% personalizadas</li>
+          <li onclick="showFooterImageProject('independencia')">Diseño independiente y creativo</li>
+          <li onclick="showFooterImageProject('rapidez')">Tiempos de entrega ágiles</li>
+        </ul>
+      </div>
+      <div class="footer-image">
+        <img id="footer-image-display-project" src="../assets/arte.png" alt="Beneficio destacado: Arte y tecnología" />
+      </div>
+    </div>
+    <p>&copy; 2025 Estudio Fractal. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    function showFooterImageProject(key) {
+      const image = document.getElementById("footer-image-display-project");
+      const images = {
+        arte: "../assets/arte.png", personalizado: "../assets/personalizado.png",
+        independencia: "../assets/independencia.png", rapidez: "../assets/rapidez.png"
+      };
+       const altTexts = {
+        arte: "Beneficio destacado: Arte y tecnología en armonía",
+        personalizado: "Beneficio destacado: Soluciones personalizadas",
+        independencia: "Beneficio destacado: Diseño independiente y creativo",
+        rapidez: "Beneficio destacado: Tiempos de entrega ágiles"
+      };
+      image.src = images[key];
+      image.alt = altTexts[key];
+    }
+    if (document.getElementById("footer-image-display-project")) {
+      showFooterImageProject('arte');
+    }
+  </script>
+</body>
+</html>

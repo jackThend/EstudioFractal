@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto: Corto Animado "El Gigante de Santa Ana" - Estudio Fractal</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>body {padding-top: 70px;}</style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo-link-wrapper">
+        <div class="logo">
+        <img src="../assets/Imagenes/logo-estudio-fractal.png" alt="Logo Estudio Fractal" class="logo-img" />
+        Estudio Fractal
+        </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#products">Productos</a></li>
+      <li><a href="../index.html#expertise">Proyectos</a></li>
+      <li><a href="../paginas/about.html">Sobre Nosotros</a></li>
+    </ul>
+    <a class="cta-button" href="../paginas/contact.html">Contáctanos →</a>
+  </nav>
+
+  <main class="main-content">
+    <a href="../index.html#expertise" class="back-link">← Volver a Proyectos</a>
+    <h1>Proyecto: Corto Animado "El Gigante de Santa Ana"</h1>
+    <img src="../assets/corto-gigante-santa-ana.jpg" alt="Ilustración conceptual del Gigante de Santa Ana, mostrando su imponente figura en un paisaje local." class="content-image"/>
+
+    <p><strong>"El Gigante de Santa Ana"</strong> es un cortometraje de animación que da vida a una fascinante leyenda local, narrada y visualizada a través de la particular visión del artista gráfico Asterión y la capacidad productiva de Estudio Fractal. Este proyecto busca rescatar y difundir el folklore regional, utilizando la animación como una herramienta poderosa para conectar a nuevas generaciones con las historias que conforman su identidad cultural.</p>
+
+    <h2>La Leyenda y su Adaptación</h2>
+    <p>El corto se basa en una leyenda popular de la región de Santa Ana (o una localidad similar, dependiendo del origen exacto de la historia referida por Asterión), que habla de un gigante, una criatura mítica o un evento extraordinario que marcó la memoria colectiva del lugar. La adaptación animada buscará ser fiel al espíritu de la leyenda, al tiempo que permite una interpretación artística y visual única.</p>
+    <p>La narrativa, guiada por la voz de Asterión (o un narrador con un estilo similar), se centrará en los aspectos más evocadores y simbólicos de la leyenda, explorando sus posibles significados y su relevancia en el presente.</p>
+
+    <h2>Estilo Visual y Dirección Artística</h2>
+    <p>El estilo visual será uno de los pilares del cortometraje, buscando reflejar la estética característica de Asterión y la atmósfera de la leyenda:</p>
+    <ul>
+      <li><strong>Diseño de Personajes y Criaturas Emblemático:</strong> El Gigante y otros posibles personajes serán diseñados para ser memorables e impactantes, inspirados en la descripción de la leyenda y la interpretación artística.</li>
+      <li><strong>Ambientación Detallada y Evocadora:</strong> Los escenarios representarán paisajes locales reconocibles, pero imbuidos de una cualidad mágica o misteriosa propia del relato.</li>
+      <li><strong>Paleta de Colores Significativa:</strong> Los colores se utilizarán para transmitir emociones, marcar el tono de diferentes escenas y resaltar elementos clave de la narrativa.</li>
+      <li><strong>Técnicas de Animación Híbridas:</strong> Se podría considerar una mezcla de animación 2D digital con elementos de motion graphics o incluso texturas fotográficas para enriquecer el aspecto visual.</li>
+    </ul>
+
+    <h2>Narración y Diseño Sonoro</h2>
+    <ul>
+      <li><strong>Voz Narrativa Carismática:</strong> La narración de Asterión (o una voz seleccionada por su capacidad de contar historias) será fundamental para guiar al espectador a través de la leyenda.</li>
+      <li><strong>Música Original con Raíces Locales:</strong> La banda sonora podría inspirarse en la música tradicional de la región, adaptada para crear una atmósfera épica, misteriosa o emotiva según requiera la historia.</li>
+      <li><strong>Efectos de Sonido Inmersivos:</strong> Para dar vida al Gigante, a los fenómenos naturales y a los ambientes del relato.</li>
+    </ul>
+
+    <h2>Objetivos y Alcance del Proyecto</h2>
+    <p>"El Gigante de Santa Ana" tiene múltiples propósitos:</p>
+    <ul>
+      <li><strong>Preservación Cultural:</strong> Contribuir a mantener vivas las leyendas y tradiciones orales de la región.</li>
+      <li><strong>Difusión Artística:</strong> Mostrar el talento de artistas locales como Asterión y las capacidades de producción de Estudio Fractal.</li>
+      <li><strong>Entretenimiento Educativo:</strong> Ofrecer una pieza atractiva que pueda ser disfrutada por diversas audiencias, al tiempo que transmite conocimiento sobre el patrimonio cultural.</li>
+      <li><strong>Fomento de la Identidad Local:</strong> Reforzar el sentido de pertenencia y el aprecio por las historias propias de la comunidad.</li>
+    </ul>
+    <p>Este cortometraje animado es una apuesta por el poder de las historias locales contadas con herramientas globales, uniendo la tradición oral con la innovación digital para crear una experiencia culturalmente rica y visualmente cautivadora.</p>
+  </main>
+
+  <footer class="footer section-spacer">
+    <div class="footer-highlight">
+      <div class="footer-benefits">
+        <h3>¿Por qué elegir Estudio Fractal?</h3>
+        <ul>
+          <li onclick="showFooterImageProject('arte')">Arte + Tecnología en armonía</li>
+          <li onclick="showFooterImageProject('personalizado')">Soluciones 100% personalizadas</li>
+          <li onclick="showFooterImageProject('independencia')">Diseño independiente y creativo</li>
+          <li onclick="showFooterImageProject('rapidez')">Tiempos de entrega ágiles</li>
+        </ul>
+      </div>
+      <div class="footer-image">
+        <img id="footer-image-display-project" src="../assets/arte.png" alt="Beneficio destacado: Arte y tecnología" />
+      </div>
+    </div>
+    <p>&copy; 2025 Estudio Fractal. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    function showFooterImageProject(key) {
+      const image = document.getElementById("footer-image-display-project");
+      const images = {
+        arte: "../assets/arte.png", personalizado: "../assets/personalizado.png",
+        independencia: "../assets/independencia.png", rapidez: "../assets/rapidez.png"
+      };
+       const altTexts = {
+        arte: "Beneficio destacado: Arte y tecnología en armonía",
+        personalizado: "Beneficio destacado: Soluciones personalizadas",
+        independencia: "Beneficio destacado: Diseño independiente y creativo",
+        rapidez: "Beneficio destacado: Tiempos de entrega ágiles"
+      };
+      image.src = images[key];
+      image.alt = altTexts[key];
+    }
+    if (document.getElementById("footer-image-display-project")) {
+      showFooterImageProject('arte');
+    }
+  </script>
+</body>
+</html>

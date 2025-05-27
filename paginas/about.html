@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nosotros - Estudio Fractal</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* Ajuste para que el contenido no quede debajo del navbar fijo */
+    body {
+      padding-top: 70px; /* Ajustar según la altura real del navbar */
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo-link-wrapper">
+        <div class="logo">
+        <img src="../assets/Imagenes/logo-estudio-fractal.png" alt="Logo Estudio Fractal" class="logo-img" />
+        Estudio Fractal
+        </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#products">Productos</a></li>
+      <li><a href="../index.html#expertise">Proyectos</a></li>
+      <li><a href="about.html">Sobre Nosotros</a></li>
+    </ul>
+    <a class="cta-button" href="contact.html">Contáctanos →</a>
+  </nav>
+
+  <main class="main-content">
+    <a href="../index.html" class="back-link">← Volver a Inicio</a>
+    <h1>Sobre Nosotros: La Fusión de Arte y Tecnología</h1>
+    <img src="../assets/Imagenes/team-estudio-fractal.jpg" alt="El equipo creativo de Estudio Fractal trabajando en proyectos" class="content-image" style="max-width:600px;">
+
+    <p>En <strong>Estudio Fractal</strong>, somos un colectivo de mentes creativas y técnicas apasionadas por explorar la infinita convergencia entre el arte digital y las soluciones tecnológicas de vanguardia. Nacimos de la convicción de que la tecnología puede ser una extensión del lienzo del artista y que el código puede componer sinfonías visuales y funcionales.</p>
+
+    <h2>Nuestra Filosofía</h2>
+    <p>Nuestra misión es trascender los límites convencionales, ofreciendo productos y servicios que no solo resuelven problemas, sino que también inspiran y deleitan. Creemos firmemente en el poder de las ideas originales y en la personalización como pilares fundamentales para cada proyecto exitoso. Cada desafío es una oportunidad para innovar, para tejer la lógica de la programación con la intuición del diseño artístico.</p>
+    <p>Nos movemos en los márgenes, donde la experimentación es la norma y la creatividad es la brújula. Desde el desarrollo de software a medida hasta la creación de contenido digital y artístico que cuenta historias, cada pieza que producimos es un reflejo de nuestra dedicación a la excelencia y la originalidad.</p>
+
+    <h2>¿Qué nos hace diferentes?</h2>
+    <ul>
+      <li><strong>Visión Holística:</strong> Integramos arte y tecnología desde la concepción de la idea, no como componentes separados.</li>
+      <li><strong>Enfoque Personalizado:</strong> Cada cliente y proyecto es único. Escuchamos, entendemos y co-creamos soluciones que se alinean perfectamente con tus objetivos.</li>
+      <li><strong>Independencia Creativa:</strong> Nuestro espíritu independiente nos otorga la agilidad para adaptarnos y la libertad para proponer soluciones audaces y fuera de lo común.</li>
+      <li><strong>Compromiso con la Calidad y Agilidad:</strong> No sacrificamos la calidad por la velocidad, pero nuestra estructura flexible nos permite ofrecer tiempos de entrega competitivos y eficientes.</li>
+    </ul>
+
+    <p>Si buscas un socio que hable fluidamente los lenguajes del arte y la tecnología, que entienda tus necesidades y las traduzca en realidades impactantes y funcionales, has llegado al lugar correcto. En Estudio Fractal, estamos listos para dar forma a tu próxima gran idea.</p>
+  </main>
+
+  <footer class="footer section-spacer">
+    <div class="footer-highlight">
+      <div class="footer-benefits">
+        <h3>¿Por qué elegir Estudio Fractal?</h3>
+        <ul>
+          <li onclick="showFooterImageAbout('arte')">Arte + Tecnología en armonía</li>
+          <li onclick="showFooterImageAbout('personalizado')">Soluciones 100% personalizadas</li>
+          <li onclick="showFooterImageAbout('independencia')">Diseño independiente y creativo</li>
+          <li onclick="showFooterImageAbout('rapidez')">Tiempos de entrega ágiles</li>
+        </ul>
+      </div>
+      <div class="footer-image">
+        <img id="footer-image-display-about" src="../assets/arte.png" alt="Beneficio destacado: Arte y tecnología" />
+      </div>
+    </div>
+    <p>© 2025 Estudio Fractal. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Renombrada para evitar conflictos si se carga otra página con la misma función
+    function showFooterImageAbout(key) {
+      const image = document.getElementById("footer-image-display-about");
+      const images = {
+        arte: "../assets/arte.png",
+        personalizado: "../assets/personalizado.png",
+        independencia: "../assets/independencia.png",
+        rapidez: "../assets/rapidez.png"
+      };
+      const altTexts = {
+        arte: "Beneficio destacado: Arte y tecnología en armonía",
+        personalizado: "Beneficio destacado: Soluciones personalizadas",
+        independencia: "Beneficio destacado: Diseño independiente y creativo",
+        rapidez: "Beneficio destacado: Tiempos de entrega ágiles"
+      };
+      image.src = images[key];
+      image.alt = altTexts[key];
+    }
+    // Inicializar con la primera imagen
+    if (document.getElementById("footer-image-display-about")) {
+      showFooterImageAbout('arte');
+    }
+  </script>
+</body>
+</html>

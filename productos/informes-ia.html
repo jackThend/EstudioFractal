@@ -1,0 +1,97 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informes y Trabajos con IA - Estudio Fractal</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>body {padding-top: 70px;}</style>
+</head>
+<body>
+ <nav class="navbar">
+    <a href="../index.html" class="logo-link-wrapper">
+        <div class="logo">
+        <img src="../assets/Imagenes/logo-estudio-fractal.png" alt="Logo Estudio Fractal" class="logo-img" />
+        Estudio Fractal
+        </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#products">Productos</a></li>
+      <li><a href="../index.html#expertise">Proyectos</a></li>
+      <li><a href="../paginas/about.html">Sobre Nosotros</a></li>
+    </ul>
+    <a class="cta-button" href="../paginas/contact.html">Contáctanos →</a>
+  </nav>
+
+  <main class="main-content">
+    <a href="../index.html#products" class="back-link">← Volver a Productos</a>
+    <h1>Informes y Trabajos Académicos Potenciados por IA</h1>
+    <img src="../assets/informes-ia.png" alt="Visualización de inteligencia artificial asistiendo en la creación de informes y análisis de datos" class="content-image"/>
+    <p>La inteligencia artificial está revolucionando la forma en que investigamos, analizamos información y producimos conocimiento. En Estudio Fractal, ofrecemos servicios de <strong>asistencia y desarrollo de informes, investigaciones y trabajos académicos utilizando herramientas de IA</strong> de manera ética y eficiente. Maximizamos tu productividad y la calidad de tus entregas, ayudándote a alcanzar tus objetivos académicos y profesionales.</p>
+
+    <h2>¿Cómo Puede la IA Mejorar tus Informes y Trabajos?</h2>
+    <p>La IA puede ser una aliada poderosa en múltiples etapas del proceso de creación de contenido:</p>
+    <ul>
+      <li><strong>Investigación y Recopilación de Información:</strong> Acceso rápido a vastas bases de datos, resumen de artículos extensos y identificación de fuentes relevantes.</li>
+      <li><strong>Análisis de Datos:</strong> Procesamiento de grandes volúmenes de datos, identificación de patrones, tendencias y correlaciones que podrían pasar desapercibidas.</li>
+      <li><strong>Generación de Borradores y Estructuración:</strong> Ayuda en la creación de esquemas, redacción de secciones iniciales y organización lógica del contenido.</li>
+      <li><strong>Mejora de la Redacción y Estilo:</strong> Corrección gramatical y ortográfica avanzada, sugerencias para mejorar la claridad, coherencia y tono del texto.</li>
+      <li><strong>Verificación de Plagio y Originalidad:</strong> Herramientas para asegurar la integridad académica de tu trabajo.</li>
+      <li><strong>Traducción y Adaptación de Contenidos:</strong> Facilita la comprensión y uso de fuentes en otros idiomas.</li>
+    </ul>
+
+    <h2>Nuestros Servicios Incluyen:</h2>
+    <ul>
+      <li><strong>Consultoría en Herramientas de IA:</strong> Te asesoramos sobre las mejores plataformas y técnicas de IA para tus necesidades específicas.</li>
+      <li><strong>Prompt Engineering para Investigación:</strong> Diseño de instrucciones precisas (prompts) para obtener los resultados más relevantes y útiles de los modelos de IA.</li>
+      <li><strong>Asistencia en Análisis de Datos con IA:</strong> Apoyo en la interpretación y visualización de datos procesados por IA.</li>
+      <li><strong>Revisión y Edición de Textos Generados o Asistidos por IA:</strong> Aseguramos que el resultado final sea coherente, preciso y mantenga tu voz y perspectiva crítica.</li>
+      <li><strong>Talleres de Capacitación:</strong> Formación sobre el uso ético y efectivo de la IA en la investigación y redacción.</li>
+    </ul>
+
+    <h2>Compromiso Ético:</h2>
+    <p>En Estudio Fractal, promovemos el uso responsable de la IA. Nuestro objetivo es potenciar tus capacidades, no reemplazarlas. Fomentamos la transparencia, la verificación de la información y el pensamiento crítico en todos los proyectos asistidos por inteligencia artificial.</p>
+    <p><strong>Optimiza tu tiempo y eleva la calidad de tus informes y trabajos.</strong> Descubre cómo la IA, guiada por la experiencia de Estudio Fractal, puede ser tu mejor aliada.</p>
+<a href="../paginas/compra.html?producto=informes-ia" class="cta-button product-page-buy-button">Solicitar Asistencia con IA</a>
+</main>
+
+  <footer class="footer section-spacer">
+    <div class="footer-highlight">
+      <div class="footer-benefits">
+        <h3>¿Por qué elegir Estudio Fractal?</h3>
+        <ul>
+          <li onclick="showFooterImageProduct('arte')">Arte + Tecnología en armonía</li>
+          <li onclick="showFooterImageProduct('personalizado')">Soluciones 100% personalizadas</li>
+          <li onclick="showFooterImageProduct('independencia')">Diseño independiente y creativo</li>
+          <li onclick="showFooterImageProduct('rapidez')">Tiempos de entrega ágiles</li>
+        </ul>
+      </div>
+      <div class="footer-image">
+        <img id="footer-image-display-product" src="../assets/arte.png" alt="Beneficio destacado: Arte y tecnología" />
+      </div>
+    </div>
+    <p>&copy; 2025 Estudio Fractal. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    function showFooterImageProduct(key) {
+      const image = document.getElementById("footer-image-display-product");
+      const images = {
+        arte: "../assets/arte.png", personalizado: "../assets/personalizado.png",
+        independencia: "../assets/independencia.png", rapidez: "../assets/rapidez.png"
+      };
+       const altTexts = {
+        arte: "Beneficio destacado: Arte y tecnología en armonía",
+        personalizado: "Beneficio destacado: Soluciones personalizadas",
+        independencia: "Beneficio destacado: Diseño independiente y creativo",
+        rapidez: "Beneficio destacado: Tiempos de entrega ágiles"
+      };
+      image.src = images[key];
+      image.alt = altTexts[key];
+    }
+    if (document.getElementById("footer-image-display-product")) {
+      showFooterImageProduct('arte');
+    }
+  </script>
+</body>
+</html>

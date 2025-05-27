@@ -1,0 +1,92 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Optimización del Currículum Web - Estudio Fractal</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>body {padding-top: 70px;}</style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo-link-wrapper">
+        <div class="logo">
+        <img src="../assets/Imagenes/logo-estudio-fractal.png" alt="Logo Estudio Fractal" class="logo-img" />
+        Estudio Fractal
+        </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#products">Productos</a></li>
+      <li><a href="../index.html#expertise">Proyectos</a></li>
+      <li><a href="../paginas/about.html">Sobre Nosotros</a></li>
+    </ul>
+    <a class="cta-button" href="../paginas/contact.html">Contáctanos →</a>
+  </nav>
+
+  <main class="main-content">
+    <a href="../index.html#products" class="back-link">← Volver a Productos</a>
+    <h1>Optimización del Currículum Web: Tu Marca Personal Digital</h1>
+    <img src="../assets/cv-web.png" alt="Ejemplo de un currículum web dinámico y profesional" class="content-image"/>
+    <p>En la era digital, tu currículum es mucho más que un simple documento; es tu carta de presentación interactiva al mundo profesional. Nuestro servicio de <strong>Optimización del Currículum Web</strong> transforma tu perfil tradicional en una experiencia online atractiva, dinámica y altamente efectiva, diseñada para captar la atención de reclutadores y destacar tus fortalezas de manera única.</p>
+
+    <h2>¿Por qué un Currículum Web?</h2>
+    <p>Un CV web te permite ir más allá de las limitaciones del papel. Puedes integrar elementos multimedia, enlaces directos a tus proyectos, testimonios, y presentar tu trayectoria de una forma visualmente impactante y fácil de navegar. Es tu oportunidad de controlar tu narrativa profesional y mostrar tu personalidad y creatividad.</p>
+
+    <h2>Características Clave de Nuestros CVs Web:</h2>
+    <ul>
+      <li><strong>Diseño Único y Moderno:</strong> Creamos una estética personalizada que refleja tu identidad profesional y sector.</li>
+      <li><strong>Totalmente Responsivo:</strong> Perfecta visualización en cualquier dispositivo: móviles, tablets y ordenadores de escritorio.</li>
+      <li><strong>Secciones Interactivas:</strong> Galerías de proyectos, líneas de tiempo de experiencia, habilidades con barras de progreso, y más.</li>
+      <li><strong>Multimedia Integrada:</strong> Posibilidad de incluir videos de presentación, portfolios de imágenes, o audios.</li>
+      <li><strong>Optimización SEO Básica:</strong> Ayudamos a que tu perfil sea más visible para búsquedas relevantes.</li>
+      <li><strong>Fácil de Actualizar:</strong> Te proporcionamos las herramientas o el soporte para mantener tu información al día sin complicaciones.</li>
+      <li><strong>Dominio Personalizado (Opcional):</strong> Aloja tu CV en una dirección web propia (ej. tunombre.com).</li>
+      <li><strong>Análisis y Seguimiento (Opcional):</strong> Integra herramientas para saber quién visita tu perfil.</li>
+    </ul>
+
+    <h2>Beneficios para ti:</h2>
+    <p>Invertir en un currículum web profesional te posiciona un paso adelante en el competitivo mercado laboral. Demuestra proactividad, manejo de herramientas digitales y una presentación cuidada y moderna. Es una herramienta poderosa para networking, búsqueda de empleo o simplemente para consolidar tu marca personal online.</p>
+    <p><strong>¿Listo para llevar tu presentación profesional al siguiente nivel?</strong> Contáctanos y descubre cómo un CV web de Estudio Fractal puede abrirte nuevas puertas.</p>
+<a href="../paginas/compra.html?producto=cv-web" class="cta-button product-page-buy-button">Solicitar este Servicio</a>
+</main>
+
+  <footer class="footer section-spacer">
+    <div class="footer-highlight">
+      <div class="footer-benefits">
+        <h3>¿Por qué elegir Estudio Fractal?</h3>
+        <ul>
+          <li onclick="showFooterImageProduct('arte')">Arte + Tecnología en armonía</li>
+          <li onclick="showFooterImageProduct('personalizado')">Soluciones 100% personalizadas</li>
+          <li onclick="showFooterImageProduct('independencia')">Diseño independiente y creativo</li>
+          <li onclick="showFooterImageProduct('rapidez')">Tiempos de entrega ágiles</li>
+        </ul>
+      </div>
+      <div class="footer-image">
+        <img id="footer-image-display-product" src="../assets/arte.png" alt="Beneficio destacado: Arte y tecnología" />
+      </div>
+    </div>
+    <p>&copy; 2025 Estudio Fractal. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    function showFooterImageProduct(key) {
+      const image = document.getElementById("footer-image-display-product");
+      const images = {
+        arte: "../assets/arte.png", personalizado: "../assets/personalizado.png",
+        independencia: "../assets/independencia.png", rapidez: "../assets/rapidez.png"
+      };
+      const altTexts = {
+        arte: "Beneficio destacado: Arte y tecnología en armonía",
+        personalizado: "Beneficio destacado: Soluciones personalizadas",
+        independencia: "Beneficio destacado: Diseño independiente y creativo",
+        rapidez: "Beneficio destacado: Tiempos de entrega ágiles"
+      };
+      image.src = images[key];
+      image.alt = altTexts[key];
+    }
+    if (document.getElementById("footer-image-display-product")) {
+      showFooterImageProduct('arte');
+    }
+  </script>
+</body>
+</html>

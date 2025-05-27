@@ -1,0 +1,96 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Libros de Cuentos Personalizados - Estudio Fractal</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>body {padding-top: 70px;}</style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo-link-wrapper">
+        <div class="logo">
+        <img src="../assets/Imagenes/logo-estudio-fractal.png" alt="Logo Estudio Fractal" class="logo-img" />
+        Estudio Fractal
+        </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#products">Productos</a></li>
+      <li><a href="../index.html#expertise">Proyectos</a></li>
+      <li><a href="../paginas/about.html">Sobre Nosotros</a></li>
+    </ul>
+    <a class="cta-button" href="../paginas/contact.html">Contáctanos →</a>
+  </nav>
+
+  <main class="main-content">
+    <a href="../index.html#products" class="back-link">← Volver a Productos</a>
+    <h1>Libros de Cuentos Personalizados: Historias Mágicas Hechas Realidad</h1>
+    <img src="../assets/libros-cuentos.png" alt="Collage de ilustraciones y portadas de libros de cuentos personalizados y llenos de color" class="content-image"/>
+    <p>Regala una experiencia inolvidable y fomenta el amor por la lectura con nuestros <strong>Libros de Cuentos Personalizados</strong>. En Estudio Fractal, creamos narrativas únicas e ilustraciones encantadoras donde tus seres queridos (niñas, niños, ¡e incluso adultos!) se convierten en los protagonistas de sus propias aventuras. Cada libro es una obra de arte hecha a medida, un tesoro para guardar toda la vida.</p>
+
+    <h2>¿Qué Hace Especiales a Nuestros Cuentos Personalizados?</h2>
+    <ul>
+      <li><strong>Protagonistas Reales:</strong> El personaje principal puede llevar el nombre, características físicas (color de pelo, ojos), e incluso rasgos de personalidad del destinatario.</li>
+      <li><strong>Tramas Adaptables:</strong> Podemos incorporar nombres de amigos, familiares, mascotas, lugares favoritos o hobbies en la historia, haciéndola aún más personal y significativa.</li>
+      <li><strong>Ilustraciones Originales y Vibrantes:</strong> Nuestros artistas crean ilustraciones a todo color que capturan la esencia de la historia y de sus personajes, con un estilo que puede adaptarse a diferentes gustos y edades.</li>
+      <li><strong>Mensajes y Valores Positivos:</strong> Las historias pueden ser diseñadas para transmitir enseñanzas, fomentar la imaginación, la amistad, el coraje, o simplemente para divertir y emocionar.</li>
+      <li><strong>Calidad de Impresión Profesional:</strong> Ofrecemos opciones de encuadernación duradera y papel de alta calidad para que el libro sea un objeto hermoso y resistente.</li>
+      <li><strong>Para Todas las Edades:</strong> Creamos cuentos para los más pequeños, con lenguaje sencillo e ilustraciones llamativas, hasta narrativas más elaboradas para jóvenes y adultos que apreciarán un regalo verdaderamente único.</li>
+    </ul>
+
+    <h2>El Proceso Creativo:</h2>
+    <ol>
+      <li><strong>Consulta Inicial:</strong> Nos cuentas sobre la persona a la que va dirigido el cuento, sus gustos, y cualquier detalle que quieras incluir.</li>
+      <li><strong>Desarrollo de la Historia:</strong> Nuestro equipo de escritores crea un borrador de la trama y el texto, adaptado a la edad e intereses del protagonista.</li>
+      <li><strong>Creación de Ilustraciones:</strong> Una vez aprobada la historia, nuestros ilustradores dan vida a los personajes y escenarios.</li>
+      <li><strong>Maquetación y Diseño:</strong> Integramos texto e imágenes en un diseño de libro atractivo.</li>
+      <li><strong>Revisión y Aprobación Final:</strong> Te presentamos el libro digital para tu visto bueno antes de la impresión.</li>
+      <li><strong>Impresión y Entrega:</strong> Recibes un libro físico de alta calidad, listo para regalar.</li>
+    </ol>
+
+    <h2>Un Regalo Inolvidable para Cualquier Ocasión:</h2>
+    <p>Cumpleaños, nacimientos, navidades, aniversarios, o simplemente para decir "te quiero" de una forma original. Un cuento personalizado es más que un libro; es una demostración de afecto, un recuerdo precioso y una puerta a mundos de fantasía.</p>
+    <p><strong>Crea un universo de magia y aventura.</strong> Contacta a Estudio Fractal para empezar a diseñar el cuento personalizado perfecto.</p>
+<a href="../paginas/compra.html?producto=cuento-personalizado" class="cta-button product-page-buy-button">Encargar Cuento</a>
+</main>
+  <footer class="footer section-spacer">
+    <div class="footer-highlight">
+      <div class="footer-benefits">
+        <h3>¿Por qué elegir Estudio Fractal?</h3>
+        <ul>
+          <li onclick="showFooterImageProduct('arte')">Arte + Tecnología en armonía</li>
+          <li onclick="showFooterImageProduct('personalizado')">Soluciones 100% personalizadas</li>
+          <li onclick="showFooterImageProduct('independencia')">Diseño independiente y creativo</li>
+          <li onclick="showFooterImageProduct('rapidez')">Tiempos de entrega ágiles</li>
+        </ul>
+      </div>
+      <div class="footer-image">
+        <img id="footer-image-display-product" src="../assets/arte.png" alt="Beneficio destacado: Arte y tecnología" />
+      </div>
+    </div>
+    <p>&copy; 2025 Estudio Fractal. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    function showFooterImageProduct(key) {
+      const image = document.getElementById("footer-image-display-product");
+      const images = {
+        arte: "../assets/arte.png", personalizado: "../assets/personalizado.png",
+        independencia: "../assets/independencia.png", rapidez: "../assets/rapidez.png"
+      };
+       const altTexts = {
+        arte: "Beneficio destacado: Arte y tecnología en armonía",
+        personalizado: "Beneficio destacado: Soluciones personalizadas",
+        independencia: "Beneficio destacado: Diseño independiente y creativo",
+        rapidez: "Beneficio destacado: Tiempos de entrega ágiles"
+      };
+      image.src = images[key];
+      image.alt = altTexts[key];
+    }
+    if (document.getElementById("footer-image-display-product")) {
+      showFooterImageProduct('arte');
+    }
+  </script>
+</body>
+</html>

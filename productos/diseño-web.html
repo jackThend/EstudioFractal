@@ -1,0 +1,104 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseño y Creación de Páginas Web Únicas - Estudio Fractal</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>body {padding-top: 70px;}</style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="logo-link-wrapper">
+        <div class="logo">
+        <img src="../assets/Imagenes/logo-estudio-fractal.png" alt="Logo Estudio Fractal" class="logo-img" />
+        Estudio Fractal
+        </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#products">Productos</a></li>
+      <li><a href="../index.html#expertise">Proyectos</a></li>
+      <li><a href="../paginas/about.html">Sobre Nosotros</a></li>
+    </ul>
+    <a class="cta-button" href="../paginas/contact.html">Contáctanos →</a>
+  </nav>
+
+  <main class="main-content">
+    <a href="../index.html#products" class="back-link">← Volver a Productos</a>
+    <h1>Diseño y Creación de Páginas Web Personales y de Artistas</h1>
+    <img src="../assets/diseno-web-ejemplo.png" alt="Ejemplos de diseños web creativos y personalizados para artistas y profesionales" class="content-image"/>
+    <p>Tu presencia online es tu escaparate al mundo. En Estudio Fractal, nos especializamos en el <strong>diseño y creación de páginas web personales y para artistas</strong> que no solo son visualmente impactantes, sino también funcionales, intuitivas y reflejan tu identidad única. Creamos espacios digitales donde tu trabajo, tu historia y tu mensaje brillan con luz propia.</p>
+    <p><em>Nota: La imagen original para este producto en index.html era "podcast.png". Se ha sustituido por "diseno-web-ejemplo.png" para mayor coherencia. Si "podcast.png" era intencional para un tipo de web específica, avísanos.</em></p>
+
+    <h2>¿Por Qué una Web Personalizada de Estudio Fractal?</h2>
+    <ul>
+      <li><strong>Diseño con Alma Artística:</strong> No usamos plantillas genéricas. Cada web es una obra de arte digital, concebida desde cero para capturar tu esencia.</li>
+      <li><strong>Enfoque en la Experiencia de Usuario (UX):</strong> Creamos interfaces fáciles de navegar, que guían al visitante de forma natural hacia lo que quieres mostrar.</li>
+      <li><strong>Optimización para Dispositivos Móviles (Responsive Design):</strong> Tu web se verá impecable y funcionará perfectamente en cualquier pantalla: ordenadores, tablets y smartphones.</li>
+      <li><strong>Integración de tu Portfolio:</strong> Mostramos tus obras, proyectos o servicios de la forma más atractiva y profesional, con galerías de imágenes, videos, audios, etc.</li>
+      <li><strong>Narrativa Visual y Textual Coherente:</strong> Te ayudamos a contar tu historia, destacando tus logros y tu propuesta de valor.</li>
+      <li><strong>Optimización SEO Básica:</strong> Implementamos buenas prácticas para que tu web sea más fácilmente encontrada por los motores de búsqueda.</li>
+      <li><strong>Autogestionable (Opcional):</strong> Si lo deseas, podemos construir tu web sobre plataformas (como WordPress con constructores visuales) que te permitan actualizar contenido fácilmente.</li>
+    </ul>
+
+    <h2>Ideal para:</h2>
+    <ul>
+      <li>Artistas plásticos, músicos, escritores, fotógrafos, diseñadores.</li>
+      <li>Profesionales independientes que buscan una marca personal fuerte.</li>
+      <li>Pequeños estudios creativos o colectivos.</li>
+      <li>Cualquiera que desee una web con un diseño original y una identidad visual cuidada.</li>
+    </ul>
+
+    <h2>Nuestro Proceso de Creación Web:</h2>
+    <ol>
+      <li><strong>Descubrimiento y Conceptualización:</strong> Nos reunimos contigo para entender tus necesidades, tu estilo y tus objetivos.</li>
+      <li><strong>Diseño Visual (UI/UX):</strong> Creamos bocetos y prototipos que definen la apariencia y la navegación de tu web.</li>
+      <li><strong>Desarrollo y Programación:</strong> Nuestros desarrolladores convierten el diseño en una web funcional y optimizada.</li>
+      <li><strong>Carga de Contenido:</strong> Integramos tus textos, imágenes, videos y cualquier otro material.</li>
+      <li><strong>Pruebas y Revisión:</strong> Aseguramos que todo funcione perfectamente en diferentes navegadores y dispositivos.</li>
+      <li><strong>Lanzamiento y Soporte:</strong> Publicamos tu web y te ofrecemos el soporte que necesites.</li>
+    </ol>
+    <p><strong>Tu arte y tu talento merecen una web excepcional.</strong> Permite que Estudio Fractal cree el espacio digital perfecto para ti. ¡Contáctanos!</p>
+<a href="../paginas/compra.html?producto=diseno-web" class="cta-button product-page-buy-button">Solicitar Diseño Web</a>
+</main>
+
+  <footer class="footer section-spacer">
+    <div class="footer-highlight">
+      <div class="footer-benefits">
+        <h3>¿Por qué elegir Estudio Fractal?</h3>
+        <ul>
+          <li onclick="showFooterImageProduct('arte')">Arte + Tecnología en armonía</li>
+          <li onclick="showFooterImageProduct('personalizado')">Soluciones 100% personalizadas</li>
+          <li onclick="showFooterImageProduct('independencia')">Diseño independiente y creativo</li>
+          <li onclick="showFooterImageProduct('rapidez')">Tiempos de entrega ágiles</li>
+        </ul>
+      </div>
+      <div class="footer-image">
+        <img id="footer-image-display-product" src="../assets/arte.png" alt="Beneficio destacado: Arte y tecnología" />
+      </div>
+    </div>
+    <p>&copy; 2025 Estudio Fractal. Todos los derechos reservados.</p>
+  </footer>
+  <script>
+    function showFooterImageProduct(key) {
+      const image = document.getElementById("footer-image-display-product");
+      const images = {
+        arte: "../assets/arte.png", personalizado: "../assets/personalizado.png",
+        independencia: "../assets/independencia.png", rapidez: "../assets/rapidez.png"
+      };
+       const altTexts = {
+        arte: "Beneficio destacado: Arte y tecnología en armonía",
+        personalizado: "Beneficio destacado: Soluciones personalizadas",
+        independencia: "Beneficio destacado: Diseño independiente y creativo",
+        rapidez: "Beneficio destacado: Tiempos de entrega ágiles"
+      };
+      image.src = images[key];
+      image.alt = altTexts[key];
+    }
+    if (document.getElementById("footer-image-display-product")) {
+      showFooterImageProduct('arte');
+    }
+  </script>
+</body>
+</html>

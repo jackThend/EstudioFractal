@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cómo Comprar - Estudio Fractal</title>
+  <link rel="stylesheet" href="../style.css" /> 
+</head>
+<body class="purchase-page"> {/* Aplicamos la clase para el padding-top y estilos específicos */}
+  <nav class="navbar">
+    <a href="../index.html" class="logo-link-wrapper"> {/* LOGO CLICABLE */}
+      <div class="logo">
+        <img src="../assets/Imagenes/logo-estudio-fractal.png" alt="Logo Estudio Fractal" class="logo-img" />
+        Estudio Fractal
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#products">Productos</a></li>
+      <li><a href="../index.html#expertise">Proyectos</a></li>
+      <li><a href="../paginas/about.html">Sobre Nosotros</a></li>
+    </ul>
+    <a class="cta-button" href="contact.html">Contáctanos →</a>
+  </nav>
+
+  <div class="purchase-page-layout">
+    <aside class="purchase-image-panel" aria-label="Panel visual decorativo de compra"></aside>
+
+    <main class="purchase-content-panel">
+      <a href="../index.html#products" class="back-link">← Volver a Productos</a>
+      <h1>Adquiere Nuestros Productos Digitales</h1>
+      <p class="intro-text">
+        En Estudio Fractal, valoramos la transparencia y la conexión directa contigo. Para ofrecerte nuestros productos digitales a precios justos y competitivos, hemos simplificado el proceso de compra.
+      </p>
+
+      <section class="purchase-section" id="proceso-de-compra">
+        <h2>Proceso de Encargo y Pago Directo</h2>
+        <div class="purchase-card">
+          <h3>¿Por qué Compra Directa?</h3>
+          <p>Al gestionar los encargos y pagos directamente, evitamos intermediarios y comisiones de plataformas. Esto nos permite mantener nuestros precios accesibles y dedicar más recursos a la calidad y originalidad de cada creación. ¡Es una forma de apoyar directamente a los creadores!</p>
+        </div>
+        <div class="purchase-card">
+          <h3>Paso 1: Realiza tu Encargo</h3>
+          <p>Para solicitar un producto o servicio, por favor contáctanos a través de los siguientes canales. Indícanos qué producto te interesa y cualquier detalle o personalización que necesites:</p>
+          <div class="contact-info">
+            <a href="mailto:estudioFractal@gmail.com">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              estudioFractal@gmail.com
+            </a>
+            <a href="https://wa.me/56911111111" target="_blank" rel="noopener noreferrer"> {/* REEMPLAZA CON TU WHATSAPP */}
+                <svg viewBox="0 0 24 24"><path d="M16.75 13.96c.25.25.25.67 0 .92l-1.41 1.41c-.25.25-.67.25-.92 0l-1.01-1.01c-.5-.5-1.13-.7-1.78-.73h-.13c-1.03.13-1.98.74-2.48 1.69-.23.44-.4.83-.59 1.29-.13.3-.3.55-.51.78-.21.23-.47.41-.77.51-.31.11-.64.11-.96.03-.47-.12-.88-.39-1.2-.78-.31-.39-.56-.83-.73-1.31-.17-.48-.24-.93-.24-1.34 0-.5.13-1.04.39-1.69.07-.16.14-.32.22-.47.29-.56.63-1.06.98-1.52.35-.45.72-.88 1.11-1.28.39-.4.79-.77 1.22-1.11.43-.34.88-.65 1.34-.92.47-.27.95-.49 1.45-.66.5-.17 1.02-.27 1.55-.27.54 0 1.07.1 1.59.29.52.19 1.01.46 1.45.79.44.33.83.74 1.17 1.18.34.44.59.9.79 1.38.2.48.29.97.29 1.46 0 .54-.1.1-.29 1.52zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c2.29 0 4.42-.76 6.15-2.05L20.69 22l-1.59-2.54A9.934 9.934 0 0012 22c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8c0 1.01-.19 1.97-.53 2.84l1.48-2.35A9.996 9.996 0 0012 2z"/></svg>
+                +56 9 1111 1111 (General)
+            </a>
+          </div>
+          <p>También puedes contactarnos por nuestras redes sociales para consultas.</p>
+        </div>
+      </section>
+
+      <section class="purchase-section" id="informacion-pago">
+        <h2>Paso 2: Pago Seguro con PayPal</h2>
+        <div class="purchase-card">
+          <h3>Pagos a través de PayPal</h3>
+          <p>Una vez acordado el encargo y el precio final, el pago se realiza de forma segura mediante PayPal:</p>
+          <p><strong>Cuenta PayPal:</strong> <a href="mailto:paypal@estudiofractal.com" style="color:var(--fractal-green); font-weight:bold;">paypal@estudiofractal.com</a></p>
+          <button class="cta-button" onclick="togglePayPalGuide()" style="background-image: var(--gradient-secondary); margin-top:10px;">
+            Guía: Cómo Pagar con PayPal
+          </button>
+          <div id="paypalGuide" class="paypal-guide" style="display: none; margin-top: 1rem;">
+            <h4>Guía Paso a Paso para Pagar con PayPal:</h4>
+            <ol>
+              <li>Inicia sesión en tu cuenta de PayPal en <a href="https://www.paypal.com" target="_blank" rel="noopener noreferrer" style="color:var(--fractal-green);">www.paypal.com</a>.</li>
+              <li>Haz clic en "Enviar y Solicitar" (o "Send & Request").</li>
+              <li>En la sección "Enviar dinero", introduce nuestra dirección de correo electrónico de PayPal: <strong>paypal@estudiofractal.com</strong>.</li>
+              <li>Ingresa el monto acordado y selecciona la moneda correcta.</li>
+              <li>En la sección de "Añadir una nota", por favor incluye una referencia de tu proyecto o producto (ej. "Pago CV Web - [Tu Nombre]", "Encargo Ilustración - [Tu Nombre]").</li>
+              <li>Elige tu método de pago (saldo de PayPal, cuenta bancaria o tarjeta asociada).</li>
+              <li>Revisa los detalles y confirma el pago.</li>
+              <li>Una vez realizado el pago, por favor envíanos una captura de pantalla o el comprobante al correo electrónico por el cual gestionamos tu encargo.</li>
+            </ol>
+            <p>Si tienes alguna duda durante el proceso, no dudes en contactarnos.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="purchase-section" id="redes-sociales-compra">
+        <h2>Síguenos y Contáctanos</h2>
+        <p>Mantente al día con nuestras novedades y proyectos, o envíanos tus consultas a través de nuestras redes:</p>
+        <div class="social-media-links">
+          <a href="https://instagram.com/estudiofractal" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Estudio Fractal">
+            <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+          </a>
+          <a href="https://facebook.com/estudiofractal" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Estudio Fractal">
+            <svg viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.62.77-1.62 1.55v1.88h2.78l-.45 2.9h-2.33v7a10.05 10.05 0 0 0 8.44-9.9C22 6.53 17.5 2.04 12 2.04z"/></svg>
+          </a>
+          {/* Añade más redes si es necesario */}
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="footer section-spacer">
+    <div class="footer-highlight">
+      <div class="footer-benefits">
+        <h3>¿Por qué elegir Estudio Fractal?</h3>
+        <ul>
+          <li onclick="showFooterImagePurchase('arte')">Arte + Tecnología en armonía</li>
+          <li onclick="showFooterImagePurchase('personalizado')">Soluciones 100% personalizadas</li>
+          <li onclick="showFooterImagePurchase('independencia')">Diseño independiente y creativo</li>
+          <li onclick="showFooterImagePurchase('rapidez')">Tiempos de entrega ágiles</li>
+        </ul>
+      </div>
+      <div class="footer-image">
+        <img id="footer-image-display-purchase" src="../assets/arte.png" alt="Beneficio destacado: Arte y tecnología" />
+      </div>
+    </div>
+    <p>© 2025 Estudio Fractal. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function togglePayPalGuide() {
+      const guide = document.getElementById('paypalGuide');
+      if (guide.style.display === 'none' || guide.style.display === '') {
+        guide.style.display = 'block';
+      } else {
+        guide.style.display = 'none';
+      }
+    }
+
+    // Renombrada para esta página
+    function showFooterImagePurchase(key) {
+      const image = document.getElementById("footer-image-display-purchase");
+      if (!image) return; 
+      const images = {
+        arte: "../assets/arte.png",
+        personalizado: "../assets/personalizado.png",
+        independencia: "../assets/independencia.png",
+        rapidez: "../assets/rapidez.png"
+      };
+      const altTexts = {
+        arte: "Beneficio destacado: Arte y tecnología en armonía",
+        personalizado: "Beneficio destacado: Soluciones personalizadas",
+        independencia: "Beneficio destacado: Diseño independiente y creativo",
+        rapidez: "Beneficio destacado: Tiempos de entrega ágiles"
+      };
+      image.src = images[key];
+      image.alt = altTexts[key];
+    }
+    if (document.getElementById("footer-image-display-purchase")) {
+      showFooterImagePurchase('arte');
+    }
+  </script>
+</body>
+</html>
