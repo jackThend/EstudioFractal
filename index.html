@@ -11,7 +11,6 @@
   <header class="hero">
     <video autoplay muted loop playsinline class="bg-video">
       <source src="video/fractal-zoom.mp4" type="video/mp4" />
-      Tu navegador no soporta videos HTML5.
     </video>
     <nav class="navbar">
       <a href="index.html" class="logo-link-wrapper">
@@ -24,6 +23,7 @@
       <ul class="nav-links">
         <li><a href="#products">Productos</a></li>
         <li><a href="#expertise">Proyectos</a></li>
+        <li><a href="paginas/software.html">Software</a></li>
         <li><a href="paginas/about.html">Sobre Nosotros</a></li>
       </ul>
 
@@ -154,42 +154,34 @@
     </ul>
   </section>
 
+  <section id="software" class="projects section-spacer">
+    <h2>Software y Aplicaciones</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <a href="paginas/software.html" style="text-decoration: none; color: inherit; display: contents;">
+            <img src="assets/Imagenes/software-placeholder.png" alt="Placeholder para proyecto de software" />
+            <h3>Explora Nuestro Software</h3>
+            <p>Desde juegos hasta aplicaciones interactivas, descubre las herramientas que hemos creado.</p>
+        </a>
+        <a href="paginas/software.html" class="product-buy-button">Ver Proyectos</a>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer section-spacer">
     <div class="footer-highlight">
       <div class="footer-benefits">
         <h3>¿Por qué elegir Estudio Fractal?</h3>
         <ul>
-          <li onclick="showFooterImage('arte')">Arte + Tecnología en armonía</li>
-          <li onclick="showFooterImage('personalizado')">Soluciones 100% personalizadas</li>
-          <li onclick="showFooterImage('independencia')">Diseño independiente y creativo</li>
-          <li onclick="showFooterImage('rapidez')">Tiempos de entrega ágiles</li>
+          <li>Arte + Tecnología en armonía</li>
+          <li>Soluciones 100% personalizadas</li>
+          <li>Diseño independiente y creativo</li>
+          <li>Tiempos de entrega ágiles</li>
         </ul>
-      </div>
-      <div class="footer-image">
-        <img id="footer-image-display" src="assets/arte.png" alt="Beneficio destacado: Arte y tecnología" />
       </div>
     </div>
     <p>© 2025 Estudio Fractal. Todos los derechos reservados.</p>
   </footer>
 
-  <script>
-    function showFooterImage(key) {
-      const image = document.getElementById("footer-image-display");
-      const images = {
-        arte: "assets/arte.png",
-        personalizado: "assets/personalizado.png",
-        independencia: "assets/independencia.png",
-        rapidez: "assets/rapidez.png"
-      };
-      const altTexts = {
-        arte: "Beneficio destacado: Arte y tecnología en armonía",
-        personalizado: "Beneficio destacado: Soluciones personalizadas",
-        independencia: "Beneficio destacado: Diseño independiente y creativo",
-        rapidez: "Beneficio destacado: Tiempos de entrega ágiles"
-      };
-      image.src = images[key];
-      image.alt = altTexts[key];
-    }
-  </script>
 </body>
 </html>
